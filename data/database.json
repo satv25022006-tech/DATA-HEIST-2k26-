@@ -1,0 +1,354 @@
+{
+  "settings": {
+    "id": "global_settings",
+    "gameTitle": "DATA HEIST",
+    "gameDescription": "Crack cryptographic mysteries, inspect forensic evidence posters, decode syndicate ciphers, and neutralize international threats.",
+    "logoUrl": "/infoxtreme_logo.jpg",
+    "theme": "noir-cyber",
+    "maintenanceMode": false,
+    "demoRulesCountdownEnabled": false,
+    "demoRulesCountdownSeconds": 120,
+    "defaultTimerSeconds": 60,
+    "briefingTimerSeconds": 180,
+    "allowTimerPause": true,
+    "allowQuestionRetry": false,
+    "autoSubmitOnTimeout": true,
+    "timeoutPenaltyPoints": 10,
+    "baseCorrectPoints": 100,
+    "incorrectPenaltyPoints": 25,
+    "hintPenaltyPoints": 15,
+    "speedBonusMultiplier": 1.5,
+    "soundEffectsEnabled": true,
+    "supportedLanguages": [
+      "en",
+      "ta"
+    ],
+    "defaultLanguage": "en",
+    "rulesText": "Welcome Agent. You are tasked with solving cyber and forensic investigations. Each case has questions with evidence posters. Read the clues carefully, inspect the evidence dossier, and submit your deduction before the countdown expires. Hints are available at a point deduction penalty. Fast solvers earn substantial speed bonuses!",
+    "updatedAt": "2026-10-12T07:56:20.012Z"
+  },
+  "admins": [
+    {
+      "id": "admin-super-01",
+      "username": "director_vance",
+      "email": "admin@detectivebureau.org",
+      "role": "super_admin",
+      "displayName": "Director Vance (Super Admin)",
+      "isBlocked": false,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "passwordHash": "admin123"
+    },
+    {
+      "id": "admin-content-02",
+      "username": "inspector_chen",
+      "email": "content@detectivebureau.org",
+      "role": "content_admin",
+      "displayName": "Chief Inspector Chen",
+      "isBlocked": false,
+      "createdAt": "2026-01-05T00:00:00.000Z",
+      "passwordHash": "content123"
+    },
+    {
+      "id": "admin-analyst-03",
+      "username": "agent_scully",
+      "email": "analyst@detectivebureau.org",
+      "role": "analyst",
+      "displayName": "Specialist Scully (Read-only)",
+      "isBlocked": false,
+      "createdAt": "2026-01-10T00:00:00.000Z",
+      "passwordHash": "analyst123"
+    }
+  ],
+  "players": [],
+  "games": [
+    {
+      "id": "game-data-heist",
+      "slug": "data-heist",
+      "title": "DATA HEIST: Cyber Forensic Intrusion",
+      "tagline": "Quantum Server Perimeter Breach & Malware Analysis",
+      "description": "An intrusion alarm was triggered at 02:41 AM inside the Apex Quantum Reserve server bank. Intercept rogue packet logs, detect cloned NFC access badges, and decrypt Trojan memory payloads.",
+      "category": "Cyber Forensics",
+      "icon": "fingerprint",
+      "badge": "Featured Event",
+      "totalLevels": 3,
+      "estimatedTime": "15-20 Mins",
+      "rules": [
+        "Each team must clear exhibits one by one under strict countdown timers.",
+        "Easy is open immediately. Medium requires 2 stars on Easy. Hard requires 2 stars on Medium.",
+        "Speed bonus awarded for unused time; wrong answers and hints incur point penalties.",
+        "Upon clearing levels, enter your Name, Register Number, College Name, and Team Name to submit final official records."
+      ]
+    },
+    {
+      "id": "game-blackwood-manor",
+      "slug": "blackwood-manor",
+      "title": "THE BLACKWOOD MANOR CIPHER",
+      "tagline": "Locked Study Crime Dynamics & Chronometer Discrepancy",
+      "description": "Lord Blackwood was found paralyzed in his locked study with his cryptographic safe emptied. Investigate French door shatter ballistics, tea toxicology, and pendulum clock gear jams.",
+      "category": "Forensics & Ballistics",
+      "icon": "shield",
+      "badge": "Victorian Cryptography",
+      "totalLevels": 3,
+      "estimatedTime": "15 Mins",
+      "rules": [
+        "Examine physical evidence diagrams, chemical spectra, and time logs.",
+        "Decisions are finalized per exhibit submission.",
+        "Complete all levels to finalize college symposium ranking."
+      ]
+    },
+    {
+      "id": "game-obsidian-syndicate",
+      "slug": "obsidian-vault",
+      "title": "THE OBSIDIAN SYNDICATE VAULT",
+      "tagline": "Biometric Laser Grid Bypass & Maritime Extraction",
+      "description": "The international syndicate Obsidian 7 breached the deep subterranean reserve. Disarm optical laser grids, identify getaway vessel exhaust heat plumes on satellite, and decode Caesar shift telegrams.",
+      "category": "High Infiltration",
+      "icon": "vault",
+      "badge": "Syndicate Threat",
+      "totalLevels": 3,
+      "estimatedTime": "20 Mins",
+      "rules": [
+        "Ground bypass nodes according to optical frequency wavelengths.",
+        "Satellite infrared signatures distinguish idling getaway crafts.",
+        "Final submission registers official symposium standing."
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "id": "level-03-syndicate",
+      "gameId": "game-obsidian-syndicate",
+      "slug": "the-syndicate-subterranean-vault",
+      "levelNumber": 3,
+      "displayOrder": 3,
+      "name": "The Syndicate Subterranean Vault",
+      "description": "The international syndicate Obsidian 7 breached the deep subterranean reserve. Bypass the optical laser grids and intercept the mole before extraction.",
+      "difficulty": "hard",
+      "timeLimitSeconds": 45,
+      "pointsPerQuestion": 150,
+      "passingScore": 300,
+      "minStarsRequiredToPass": 2,
+      "hintAvailable": true,
+      "hintPenalty": 25,
+      "incorrectPenalty": 40,
+      "speedBonusEnabled": true,
+      "speedBonusMax": 75,
+      "status": "published",
+      "unlockRequirements": {
+        "requiredPreviousLevelId": "level-02-manor",
+        "minStarsFromEasy": 2,
+        "minStarsFromMedium": 2,
+        "minTotalStars": 4,
+        "minTotalScore": 400,
+        "customConditionDescription": "Requires at least 2 Stars from Medium stage (Blackwood Manor)"
+      },
+      "translations": {
+        "ta": {
+          "name": "அப்சிடியன் சிண்டிகேட் சுரங்கப் பெட்டகம் (The Obsidian Syndicate Vault)",
+          "description": "சர்வதேச குற்றக் கும்பல் அப்சிடியன் 7 ஆழமான நிலத்தடி சேமிப்பகத்தை உடைத்தது. லேசர் கிரிட்களைத் தவிர்த்து துரோகியைத் தடுத்து நிறுத்தவும்."
+        }
+      },
+      "createdAt": "2026-01-03T10:00:00.000Z",
+      "updatedAt": "2026-01-03T10:00:00.000Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-syndicate-01",
+      "levelId": "level-03-syndicate",
+      "title": "Exhibit G: Biometric Vault Laser Grid Override",
+      "text": "The subterranean vault entrance is shielded by an alternating optical laser tripwire grid. Based on the wavelength pulse frequency sequence (Red: 650nm, Green: 532nm, Blue: 450nm) and node parity displayed on the schematic, which bypass node must be grounded first?",
+      "imagePosterUrl": "/uploads/question-posters/poster-vault-lasers.svg",
+      "imageCaption": "Forensic Evidence Poster #SYN-01: Subterranean Optical Laser Tripwire Matrix & Ground Nodes",
+      "imageStoragePath": "question-posters/poster-vault-lasers.svg",
+      "answerType": "multiple_choice",
+      "options": [
+        {
+          "id": "opt-5a",
+          "optionKey": "A",
+          "text": "Ground Node Alpha (Primary High Voltage)",
+          "isCorrect": false
+        },
+        {
+          "id": "opt-5b",
+          "optionKey": "B",
+          "text": "Ground Node Delta-9 (Green 532nm Photodiode Bypass Loop)",
+          "isCorrect": true
+        },
+        {
+          "id": "opt-5c",
+          "optionKey": "C",
+          "text": "Ground Node Omega (Siren Trigger)",
+          "isCorrect": false
+        },
+        {
+          "id": "opt-5d",
+          "optionKey": "D",
+          "text": "Cut all fiber cables simultaneously",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswerSecret": "B",
+      "explanation": "The schematic clearly highlights Node Delta-9 as the neutral grounding loop for the green 532nm photodiode array. Disarming it allows 15 seconds of blind perimeter movement.",
+      "hint": "Look for the green-tinted circuit track leading directly to the chassis ground symbol.",
+      "difficulty": "hard",
+      "category": "Security Systems",
+      "points": 150,
+      "incorrectPenalty": 40,
+      "timerOverrideSeconds": 45,
+      "displayOrder": 1,
+      "status": "published",
+      "translations": {
+        "ta": {
+          "title": "சான்று G: பயோமெட்ரிக் பெட்டக லேசர் கிரிட் புறக்கணிப்பு",
+          "text": "நிலத்தடி பெட்டக நுழைவாயில் ஆப்டிகல் லேசர் ட்ரிப்வயர் கட்டத்தால் பாதுகாக்கப்படுகிறது. திட்ட வரைபடத்தில் காட்டப்பட்டுள்ள அலைநீள துடிப்பு வரிசை (சிவப்பு: 650nm, பச்சை: 532nm, நீலம்: 450nm) மற்றும் முனை சமநிலையின் அடிப்படையில், எந்த புறக்கணிப்பு முனையை முதலில் தரையிறக்க (Ground) வேண்டும்?",
+          "caption": "தடயவியல் சான்று போஸ்டர் #SYN-01: நிலத்தடி லேசர் ட்ரிப்வயர் மேட்ரிக்ஸ் மற்றும் தரை முனைகள்",
+          "hint": "சேஸிஸ் கிரவுண்ட் சின்னத்திற்கு நேரடியாக செல்லும் பச்சை நிற சர்க்யூட் பாதையைத் தேடுங்கள்.",
+          "explanation": "வரைபடம் முனை டெல்டா-9-ஐ பச்சை நிற 532nm போட்டோடையோடுக்கான நடுநிலை தரையிறக்கும் வளையமாக தெளிவாகக் காட்டுகிறது. இதை செயலிழக்கச் செய்வது 15 வினாடிகள் ஊடுருவல் நேரத்தை அளிக்கிறது.",
+          "options": {
+            "A": "கிரவுண்ட் நோட் ஆல்ஃபா (முதன்மை உயர் மின்னழுத்தம்)",
+            "B": "கிரவுண்ட் நோட் டெல்டா-9 (பச்சை 532nm போட்டோடையோட் பைபாஸ் லூப்)",
+            "C": "கிரவுண்ட் நோட் ஒமேகா (சைரன் தூண்டுதல்)",
+            "D": "அனைத்து ஆப்டிகல் கேபிள்களையும் ஒரே நேரத்தில் வெட்டுதல்"
+          }
+        }
+      },
+      "createdAt": "2026-01-03T10:10:00.000Z",
+      "updatedAt": "2026-01-03T10:10:00.000Z"
+    },
+    {
+      "id": "q-syndicate-02",
+      "levelId": "level-03-syndicate",
+      "title": "Exhibit H: Thermal Satellite Surveillance at Extraction Dock",
+      "text": "A high-orbit infrared satellite pass scanned the harbor docks at 03:15 AM. Three vessels are docked, but only one vessel displays active twin-turbodiesel thermal engine plumes in the cooling exhaust manifold. Which vessel is the getaway craft?",
+      "imagePosterUrl": "/uploads/question-posters/poster-thermal-dock.svg",
+      "imageCaption": "Forensic Evidence Poster #SYN-02: Satellite Thermal Infrared Thermography & Dock Heat Signatures",
+      "imageStoragePath": "question-posters/poster-thermal-dock.svg",
+      "answerType": "multiple_choice",
+      "options": [
+        {
+          "id": "opt-6a",
+          "optionKey": "A",
+          "text": "Vessel A: \"Sea Nymph\" (Ambient Cold 14°C)",
+          "isCorrect": false
+        },
+        {
+          "id": "opt-6b",
+          "optionKey": "B",
+          "text": "Vessel B: \"Phantom Hydrofoil\" (Intense Thermal Core 88°C at Transom)",
+          "isCorrect": true
+        },
+        {
+          "id": "opt-6c",
+          "optionKey": "C",
+          "text": "Vessel C: \"Trawler 4\" (Cold Hull)",
+          "isCorrect": false
+        },
+        {
+          "id": "opt-6d",
+          "optionKey": "D",
+          "text": "Dock Crane #2",
+          "isCorrect": false
+        }
+      ],
+      "correctAnswerSecret": "B",
+      "explanation": "Vessel B shows an intense crimson/yellow thermal core reaching 88°C, indicating idling turbine engines ready for immediate high-speed departure.",
+      "hint": "Find the boat displaying bright yellow-white heat signatures at its stern transom.",
+      "difficulty": "hard",
+      "category": "Surveillance Intel",
+      "points": 150,
+      "incorrectPenalty": 40,
+      "timerOverrideSeconds": 45,
+      "displayOrder": 2,
+      "status": "published",
+      "translations": {
+        "ta": {
+          "title": "சான்று H: தப்பிக்கும் துறைமுகத்தில் வெப்ப செயற்கைக்கோள் கண்காணிப்பு",
+          "text": "அதிகாலை 03:15 மணிக்கு ஒரு உயர் சுற்றுப்பாதை அகச்சிவப்பு செயற்கைக்கோள் துறைமுகத்தை ஸ்கேன் செய்தது. மூன்று கப்பல்கள் நிறுத்தப்பட்டுள்ளன, ஆனால் ஒரே ஒரு படகு மட்டுமே அதன் வெளியேற்றக் குழாயில் தீவிர இரட்டை டர்போடீசல் வெப்ப எஞ்சின் புகையைக் காட்டுகிறது. தப்பிக்கும் படகு எது?",
+          "caption": "தடயவியல் சான்று போஸ்டர் #SYN-02: செயற்கைக்கோள் அகச்சிவப்பு தெர்மோகிராபி மற்றும் துறைமுக வெப்ப கையொப்பங்கள்",
+          "hint": "தனது பின்புற டிரான்ஸமில் பிரகாசமான மஞ்சள்-வெள்ளை வெப்பத்தைக் காட்டும் படகைக் கண்டறியவும்.",
+          "explanation": "படகு B-ல் 88°C ஐ எட்டும் தீவிர வெப்ப மையம் காணப்படுகிறது, இது உடனடியாக அதிக வேகத்தில் தப்பிக்க என்ஜின்கள் இயங்கிக் கொண்டிருப்பதைக் குறிக்கிறது.",
+          "options": {
+            "A": "படகு A: \"சீ நிம்ஃப்\" (குளிர்ந்த சூழல் 14°C)",
+            "B": "படகு B: \"பாண்டம் ஹைட்ரோஃபாயில்\" (பின்புறத்தில் 88°C தீவிர வெப்ப மையம்)",
+            "C": "படகு C: \"ட்ராலர் 4\" (குளிர்ந்த உடல்)",
+            "D": "கப்பல்துறை கிரேன் #2"
+          }
+        }
+      },
+      "createdAt": "2026-01-03T10:20:00.000Z",
+      "updatedAt": "2026-01-03T10:20:00.000Z"
+    },
+    {
+      "id": "q-syndicate-03",
+      "levelId": "level-03-syndicate",
+      "title": "Exhibit I: The Double Agent's Caesar Shift Cipher",
+      "text": "A secret radio burst was intercepted: \"VKDGRZ\". Using the cryptographic cipher wheel with Caesar rotation shift +3 (where D=A, E=B, etc.), decode the codename of the syndicate mole.",
+      "imagePosterUrl": "/uploads/question-posters/poster-cipher-wheel.svg",
+      "imageCaption": "Forensic Evidence Poster #SYN-03: Cryptographic Caesar Disc & Radio Frequency Intercept",
+      "imageStoragePath": "question-posters/poster-cipher-wheel.svg",
+      "answerType": "text_input",
+      "options": [],
+      "correctAnswerSecret": "SHADOW",
+      "explanation": "Applying shift -3: V(-3)=S, K(-3)=H, D(-3)=A, G(-3)=D, R(-3)=O, Z(-3)=W. The unmasked alias of the mole is \"SHADOW\".",
+      "hint": "V minus 3 letters is S. K minus 3 letters is H...",
+      "difficulty": "hard",
+      "category": "Cryptography",
+      "points": 150,
+      "incorrectPenalty": 40,
+      "timerOverrideSeconds": 45,
+      "displayOrder": 3,
+      "status": "published",
+      "translations": {
+        "ta": {
+          "title": "சான்று I: இரட்டை உளவாளியின் சீசர் மாற்றுக் குறியீடு",
+          "text": "ஒரு ரகசிய வானொலி சமிக்ஞை இடைமறிக்கப்பட்டது: \"VKDGRZ\". சீசர் சுழற்சி மாற்றம் +3 (D=A, E=B) கொண்ட கிரிப்டோகிராஃபிக் குறியீட்டு சக்கரத்தைப் பயன்படுத்தி, கும்பலின் உளவாளியின் குறியீட்டுப் பெயரை டிகோட் செய்யவும்.",
+          "caption": "தடயவியல் சான்று போஸ்டர் #SYN-03: கிரிப்டோகிராஃபிக் சீசர் சக்கரம் மற்றும் வானொலி அதிர்வெண் இடைமறிப்பு",
+          "hint": "V எழுத்திலிருந்து 3 எழுத்துக்களைக் கழித்தால் S. K எழுத்திலிருந்து 3 எழுத்துக்களைக் கழித்தால் H...",
+          "explanation": "மாற்றம் -3 ஐப் பயன்படுத்தினால்: V->S, K->H, D->A, G->D, R->O, Z->W. உளவாளியின் ரகசிய பெயர் \"SHADOW\" ஆகும்."
+        }
+      },
+      "createdAt": "2026-01-03T10:30:00.000Z",
+      "updatedAt": "2026-01-03T10:30:00.000Z"
+    }
+  ],
+  "posters": [
+    {
+      "id": "poster-01",
+      "questionId": "q-heist-01",
+      "storagePath": "question-posters/poster-heist-network.svg",
+      "publicUrl": "/uploads/question-posters/poster-heist-network.svg",
+      "originalFilename": "apex-network-topology.svg",
+      "mimeType": "image/svg+xml",
+      "fileSizeBytes": 14200,
+      "caption": "Forensic Evidence Poster #CYB-01: Apex Firewall Ingress Telemetry",
+      "createdAt": "2026-01-01T08:15:00.000Z"
+    },
+    {
+      "id": "poster-02",
+      "questionId": "q-manor-01",
+      "storagePath": "question-posters/poster-manor-ballistics.svg",
+      "publicUrl": "/uploads/question-posters/poster-manor-ballistics.svg",
+      "originalFilename": "ballistics-french-door.svg",
+      "mimeType": "image/svg+xml",
+      "fileSizeBytes": 18500,
+      "caption": "Forensic Evidence Poster #BLA-01: French Door Shatter Vector & Study Layout",
+      "createdAt": "2026-01-02T09:10:00.000Z"
+    },
+    {
+      "id": "poster-03",
+      "questionId": "q-syndicate-01",
+      "storagePath": "question-posters/poster-laser-grid.svg",
+      "publicUrl": "/uploads/question-posters/poster-laser-grid.svg",
+      "originalFilename": "laser-frequency-array.svg",
+      "mimeType": "image/svg+xml",
+      "fileSizeBytes": 16800,
+      "caption": "Forensic Evidence Poster #SYN-01: Optical Frequency Grid Node Blueprint",
+      "createdAt": "2026-01-03T10:15:00.000Z"
+    }
+  ],
+  "attempts": [],
+  "progress": {},
+  "participantSubmissions": [],
+  "auditLogs": []
+}
